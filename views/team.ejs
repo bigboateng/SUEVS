@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include templates/header.ejs %>
+	<title>Team</title>
+</head>
+<body>
+	<% include templates/navbar.ejs %>
+
+	<section class="well well4 wow fadeIn" data-wow-duration='3s'>
+		<div class="container">
+			<div class="row off3 center767">
+				
+					<h2>MEET OUR 2016 TEAM</h2><br>
+					<% for(var i = 0; i < 12; i++){ %> 
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="thumbnail1">
+							<img class="img-thumbnail" src="http://placehold.it/350x400" alt="">
+							<div class="caption">
+								<h4>
+									<a href="#">
+										User <%=i%>
+									</a>
+								</h4>
+								<p>
+									This is a caption
+								</p>
+							</div>  
+						</div>
+					</div>
+					<% } %>
+	
+			</div>
+		</div>
+	</section>
+
+	<% include templates/footer.ejs %>
+</body>
+</html>

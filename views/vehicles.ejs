@@ -3,19 +3,19 @@
 <head>
 	<title>Vehicles|Scrat1</title>
 	<% include templates/header.ejs %>
-	<% include templates/navbar.ejs %>
+	
 	<!-- video player cdn -->
 	<link href="http://vjs.zencdn.net/5.0/video-js.min.css" rel="stylesheet">
 	<script src="http://vjs.zencdn.net/5.0/video.min.js"></script>
 
 </head>
 <body>
+<% include templates/navbar.ejs %>
 	<main>
 		<section class="well well4">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-sm-12 col-xs-12">
-						<center>
 							<video id="really-cool-video" class="video-js vjs-default-skin" controls
 							preload="auto" width="640" height="264" poster="really-cool-video-poster.jpg"
 							data-setup='{}'>
@@ -26,37 +26,60 @@
 										that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
 									</p>
 								</video>
-							</center>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="well well5 bg1 wow fadeIn" data-wow-duration='3s'>
-					<h2>Powertrain</h2>
-
-					<ul class="index-list">
-					<% for(var i=0; i<5; i++) {%>
-						<li>Item</li>
-						<% } %>
-					</ul>
-				</section>
-
-				<section class="well well4 bg4 wow fadeIn" data-wow-duration='3s'>
-					<div class="container">
-						<h2>Aerodynamics</h2>
+			<section class="well well4 bg4 wow fadeIn" data-wow-duration='3s'>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+							<h2>Aerodynamics</h2>
+							<ul class="marked-list">
+							<% for(var i = 0; i < 5; i++){ %>
+								<li><a>Point <%=i%></a></li>
+							<% } %>
+							
+							</ul>
+						</div>
 					</div>
-					blah blah blak
-				</section>
-
-				<section class="well well4 bg1 wow fadeIn" data-wow-duration='3s'>
-					<div class="container">
-						<h2>Chasis</h2>
-					</div>
-					blah blah blak
-				
+				</div>
 			</section>
 
+			<section class="well well4 bg1 wow fadeIn" data-wow-duration='3s'>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+							<h2>Chasis</h2>
+							<ul class="marked-list">
+							<% for(var i = 0; i < 5; i++){ %>
+								<li><a>Point <%=i%></a></li>
+							<% } %>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+				<section class="well well4 bg4 wow fadeIn" data-wow-duration='3s'>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+							<h2>Powertrain</h2>
+							<ul class="marked-list">
+							<% for(var i = 0; i < 5; i++){ %>
+								<li><a>Point <%=i%></a></li>
+							<% } %>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 
