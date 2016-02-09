@@ -17,6 +17,7 @@ var routes = require('./routes');
 var users = require('./routes/user');
 require('./routes/vehicles')(app);
 require('./routes/team')(app);
+require('./routes/media')(app);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
